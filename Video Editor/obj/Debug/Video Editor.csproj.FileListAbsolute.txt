@@ -1,1 +1,16 @@
 C:\Users\randym\OneDrive\Video Editor\Video Editor\bin\Debug\Video Editor.exe.config
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\bin\Debug\Video Editor.exe.config
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\bin\Debug\Video Editor.exe
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\bin\Debug\Video Editor.pdb
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video Editor.csprojResolveAssemblyReference.cache
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Information.baml
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\MainWindow.baml
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Information.g.cs
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\MainWindow.g.cs
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\App.g.cs
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video Editor_MarkupCompile.cache
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video Editor.g.resources
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video_Editor.Properties.Resources.resources
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video Editor.csproj.GenerateResource.Cache
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video Editor.exe
+C:\Users\randym\Documents\GitHub\VideoEditor\Video Editor\obj\Debug\Video Editor.pdb
