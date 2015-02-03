@@ -9,5 +9,10 @@
     /// Original Video File
     /// </summary>
     public static string strOrigVideoFile;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public static string strWorkingDirectory;
 }
 
