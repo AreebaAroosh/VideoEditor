@@ -1,8 +1,19 @@
 ﻿<Window x:Class="Video_Editor.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Randy's Video Editor" Height="350" Width="525">
+        Title="Video Editor" Height="350" Width="525">
     <Grid>
-        
+        <TabControl HorizontalAlignment="Left" Height="319" VerticalAlignment="Top" Width="517">
+            <TabItem Header="Trim Video">
+                <Grid x:Name="Trim" Background="#FFFDFCFC">
+                    <Button x:Name="btnVideoSelector" Content="Select Video" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="97" Click="btnVideoSelector_Click"/>
+                    <TextBox x:Name="txtVideoFile" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="131,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
     </Grid>
 </Window>

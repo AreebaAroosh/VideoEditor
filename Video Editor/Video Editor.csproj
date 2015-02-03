@@ -65,6 +65,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Methods.cs" />
     <Compile Include="Defines.cs" />
     <Compile Include="Information.xaml.cs">
       <DependentUpon>Information.xaml</DependentUpon>

@@ -6,7 +6,7 @@
         <Label Content="Information:" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Height="27" Width="90" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Margin="26,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="224"><Run Text="This program need FFMPEG to be somewhere on your machine. If you do not have it, you can download it from the following."/><LineBreak/><Run Text="http://ffmpeg.zeranoe.com/builds/"/><LineBreak/><Run/></TextBlock>
         <Button Content="Select FFMPEG" HorizontalAlignment="Left" Margin="26,143,0,0" VerticalAlignment="Top" Width="224" Click="Button_Click"/>
-        <TextBox x:Name="txtffmpegdir" HorizontalAlignment="Left" Height="23" Margin="26,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
+        <TextBox x:Name="txtffmpegdir" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="26,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="224"/>
         <Button x:Name="btnContinue" IsEnabled="False" Content="Continue" HorizontalAlignment="Left" Margin="26,214,0,0" VerticalAlignment="Top" Width="224" Height="24" Click="btnContinue_Click"/>
 
     </Grid>

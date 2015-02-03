@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
+
 
 namespace Video_Editor
 {
@@ -24,5 +26,33 @@ namespace Video_Editor
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Gets the video file selected
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnVideoSelector_Click(object sender, RoutedEventArgs e)
+        {
+            //opens a file dialog to select where ffmpeg is
+            OpenFileDialog dlgOpen = new OpenFileDialog();
+
+            // Show the Dialog
+            Nullable<bool> bolResult = dlgOpen.ShowDialog();
+
+            // get the result of selected file and stick it in textbox
+            if (bolResult == true)
+            {
+                txtVideoFile.Text = dlgOpen.FileName;
+            }
+
+            // Save original file path and name
+            Defines.strOrigVideoFile = dlgOpen.FileName;
+
+            // now we will run a prob on it to test the duration of it
+            
+        }
+
+       
     }
 }
