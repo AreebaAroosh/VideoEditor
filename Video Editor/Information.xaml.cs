@@ -56,5 +56,18 @@ namespace Video_Editor
 
 
         }
+
+        /// <summary>
+        /// Switches windows after ffmpeg is there.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnContinue_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mwwMain = new MainWindow();
+            App.Current.MainWindow = mwwMain;
+            this.Close();
+            mwwMain.Show();
+        }
     }
 }
