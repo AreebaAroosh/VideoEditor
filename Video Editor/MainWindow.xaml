@@ -8,6 +8,80 @@
                 <Grid x:Name="Trim" Background="#FFFDFCFC">
                     <Button x:Name="btnVideoSelector" Content="Select Video" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="97" Click="btnVideoSelector_Click"/>
                     <TextBox x:Name="txtVideoFile" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="131,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="271"/>
+                    <TextBox x:Name="txtDuration" HorizontalAlignment="Left" IsReadOnly="True" Height="23" Margin="131,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label Content="Total Length" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="97"/>
+                    <Label Content="Start Time" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Width="97"/>
+                    <ComboBox x:Name="cmbStartHour" HorizontalAlignment="Left" Margin="131,126,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <Label Content="Hour" HorizontalAlignment="Left" Margin="131,95,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Min" HorizontalAlignment="Left" Margin="214,95,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Sec" HorizontalAlignment="Left" Margin="290,95,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Ms" HorizontalAlignment="Left" Margin="365,95,0,0" VerticalAlignment="Top"/>
+                    <ComboBox x:Name="cmbStartMin" HorizontalAlignment="Left" Margin="214,126,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox x:Name="cmbStartSec" HorizontalAlignment="Left" Margin="290,126,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox x:Name="cmbStartMs" HorizontalAlignment="Left" Margin="364,126,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox x:Name="cmbDurHour" HorizontalAlignment="Left" Margin="131,173,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox x:Name="cmbDurMin" HorizontalAlignment="Left" Margin="213,173,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox x:Name="cmbDurSec" HorizontalAlignment="Left" Margin="290,173,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <ComboBox x:Name="cmbDurMs" HorizontalAlignment="Left" Margin="364,173,0,0" VerticalAlignment="Top" Width="38" BorderBrush="#FFFFFBFB">
+                        <ComboBox.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                                <GradientStop Color="White" Offset="1"/>
+                            </LinearGradientBrush>
+                        </ComboBox.Background>
+                    </ComboBox>
+                    <Label Content="Duration" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" Width="97"/>
+                    <Button x:Name="btnTrim" Content="Trim Video" HorizontalAlignment="Left" Margin="140,235,0,0" VerticalAlignment="Top" Width="208" Height="36"/>
+                    <Label x:Name="lblError" Content=""  HorizontalAlignment="Left" Margin="86,204,0,0" VerticalAlignment="Top" Width="341" Foreground="#FFF50B0B"/>
                 </Grid>
             </TabItem>
             <TabItem Header="TabItem">

@@ -11,8 +11,15 @@
     public static string strOrigVideoFile;
 
     /// <summary>
-    /// 
+    /// Workign Directory
     /// </summary>
     public static string strWorkingDirectory;
+
+    /// <summary>
+    /// The video length in question
+    /// </summary>
+    public static string strVideoLength;
+
+    
 }
 

@@ -9,14 +9,20 @@ namespace Video_Editor
     class Methods
     {
 
-        //public static string strGetVideoDuration(string strVideo)
-        //{
-        //    string strDuration;
+        public static string strGetVideoDuration(string strVideo)
+        {
+            // get the ffmpeg output of the video
+            string strDuration;
+            strDuration = RunCommandGetOutput(Defines.strFFMPEGDir, " -i " + strVideo);
 
+            // get just the duration string
+            strDuration = GetDuartionLine(strDuration);
 
+            //substring the duration out
+            strDuration = strDuration.Substring(12, strDuration.Length - 12);
 
-        //    //return strDuration;
-        //}
+            return strDuration;
+        }
 
 
 
@@ -44,7 +50,7 @@ namespace Video_Editor
 
             info.Arguments = arguments;
 
-            info.WindowStyle = ProcessWindowStyle.Hidden;
+            info.WindowStyle = ProcessWindowStyle.Minimized;
             info.RedirectStandardError = true;
             info.RedirectStandardOutput = true;
             p.StartInfo = info;
@@ -61,9 +67,39 @@ namespace Video_Editor
             return output;
         }
 
-        public static void CreateWorkingDir
+        /// <summary>
+        /// Cycles through ffmpeg info to get duration
+        /// </summary>
+        /// <param name="strLongString"></param>
+        /// <returns></returns>
+        public static string GetDuartionLine(string strLongString)
         {
-            
+            string strShortString = "";
+
+            string[] strLines = strLongString.Split(new string[] { "\r\n", "\n" }, StringSplitOptions.None);
+
+            // loop through them
+            foreach (string strArray in strLines)
+            {
+                if (strArray.Contains("Duration"))
+                {
+                    strShortString = strArray;
+
+                    string[] strCommaSplitter = strShortString.Split(new string[] { "," }, StringSplitOptions.None);
+ 
+                    foreach (string strSecondArray in strCommaSplitter)
+                    {
+                        if (strSecondArray.Contains("Duration"))
+                        {
+                            strShortString = strSecondArray;
+                        }
+                    }
+
+                }
+            }
+
+            // return our final string
+            return strShortString;
         }
     }
 }
